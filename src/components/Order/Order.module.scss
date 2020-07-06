@@ -1,0 +1,48 @@
+@import '../../../src/defaultstyles/settings';
+
+.Order {
+    width: 80%;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.button{
+    background-color: $blue;
+    color: white;
+    font-size: $font-size-large;
+    font-weight: 300;
+    padding: $s-size;
+    border:none;
+    transition: 0.3s;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .button:hover{
+    background-color: $dark-blue;
+  }
+
+  
+  .button--cancel{
+    background-color: #207561;
+    margin-right: $s-size;
+    border-radius: 3px;
+  }
+  
+  .button--cancel:hover{
+    background-color:#06623b;
+    filter: drop-shadow(0 2px 3px #27496d);
+  }
+  
+  .button--confirm{
+    background-color: #9a1f40;
+    border-radius: 3px;
+  }
+  
+  .button--confirm:hover{
+    background-color: #bb3b0e;
+    filter: drop-shadow(0 2px 5px #d9455f);
+  }

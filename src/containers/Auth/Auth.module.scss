@@ -1,0 +1,95 @@
+.Auth {
+    margin:2rem auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 1rem;
+    @media (min-width: 60rem) {
+        width: 50rem;
+    }
+}
+
+.Input{
+display: block;
+width: 80%;
+margin: 1rem auto;
+}
+
+.switchmode{
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 32% 1fr 1fr;
+
+}
+
+h6{
+text-align: left;
+color: rgb(121, 44, 44);
+text-transform: capitalize;
+font-style: italic;
+margin-left:10px;;
+}
+
+h1{
+    grid-column: 1/3;
+
+   @media (min-width: 50rem) {
+    grid-column: 2/3;
+}
+}
+
+.switchSignup {
+    background-color: transparent;
+    border: none;
+    color: rgb(173, 66, 66);
+    font: inherit;
+    font-size: 0.96rem;
+    font-weight: bold;
+    align-self: end;
+    justify-self: right;
+    transition: all 0.3s ease-in;
+
+    grid-column: 3/3;
+
+   @media (max-width: 50rem) {
+    font-size: 0.8rem;
+}
+}
+
+.switchSignup:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+  }
+
+  .switchSignup:hover:after {
+    width: 100%;
+    background: rgb(221, 120, 53);
+  }
+
+.switchSignup:hover{
+    color: rgb(221, 120, 53);
+}
+
+.switchSignup:focus {
+    outline: none;
+}
+
+.arrowRight {
+    display: none;
+
+    @media (min-width: 50rem) {
+        border: solid rgb(221, 120, 53);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-right: 0.8rem;
+ }
+  }
